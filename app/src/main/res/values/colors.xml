@@ -4,5 +4,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#FFFF00</color>
     <color name="purple">#551A8B</color>
-    <color name="grey">#808080</color>
+    <color name="tim">#9932CC</color>
+    <color name="Hong">#FF00FF</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="holo_pink">#FF1492</color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="Snow">#F5F5F5</color>
+    <color name="Grayhight">#E0E0E0</color>
+    <color name="Aqua">#00FFFF	</color>
+    <color name="grey">#E0E0E0</color>
+
+
 </resources>

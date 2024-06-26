@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage_lephamhungha_mobile.NewsActivity">
+
+    <LinearLayout
+        android:id="@+id/btn_backpage"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backpage_button"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/backpage" />
+
+        <TextView
+            android:id="@+id/txt_btn_back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:paddingRight="30dp"
+            android:text="[Doraemon, Nobita và Bản Giao Hưởng Địa Cầu ]"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_backpage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tintuc"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="[Doraemon, Nobita và Bản Giao Hưởng Địa Cầu ]"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:text="Một tác phẩm mới với tên gọi Doraemon, Nobita và Bản Giao Hưởng Địa Cầu đã chính thức ra mắt, hứa hẹn mang đến cho khán giả những trải nghiệm đầy màu sắc và những cảm xúc không thể nào quên. Đây không chỉ là một bộ phim hoạt hình giải trí thông thường, mà còn là một cuộc phiêu lưu vượt qua thời gian và không gian, nơi mọi giới hạn đều có thể được vượt qua.
+ \n Một Sự Hội Tụ Của Hài Hước và Cảm Động Doraemon, chú mèo máy đến từ tương lai, cùng với cậu bé Nobita và nhóm bạn thân của mình, đã bắt đầu một cuộc hành trình đầy mê hoặc qua các thế giới khác nhau. Tại đây, họ sẽ không chỉ trải qua những cuộc phiêu lưu thú vị, mà còn phải đối mặt với những thách thức đầy rủi ro và khó khăn."/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tintuc_1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Hứa Hẹn Mang Lại Những Trải Nghiệm Đỉnh Cao
+Trailer đầu tiên của bộ phim đã gây ấn tượng mạnh mẽ với khán giả khi hé lộ một thế giới đẹp mơ mộng và rộng lớn, nơi mà mọi điều kỳ diệu đều có thể xảy ra. Từ những cảnh hành động kịch tính đến những khám phá thú vị về thế giới xung quanh, Doraemon, Nobita và Bản Giao Hưởng Địa Cầu hứa hẹn sẽ mang đến cho khán giả những trải nghiệm thú vị và không thể đoán trước.
+ \n Nâng Cao Ý Thức Về Môi Trường và Tình Bạn
+Ngoài việc là một bộ phim giải trí, Doraemon, Nobita và Bản Giao Hưởng Địa Cầu cũng mang thông điệp về ý thức môi trường và tình bạn. Qua cuộc phiêu lưu của Doraemon và nhóm bạn, khán giả sẽ được nhắc nhở về tầm quan trọng của việc bảo vệ môi trường và giữ gìn tình bạn trong mọi hoàn cảnh."/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tintuc_2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Tự Do Bay Lên Không Gian Mơ Ước Không chỉ dừng lại ở việc bảo vệ trái đất, Doraemon Nobita và Bản Giao Hưởng Địa Cầu còn mở ra một thế giới mới với không gian mơ ước, nơi mà mọi giới hạn đều có thể vượt qua. Trong hành trình này, Doraemon và nhóm bạn đã khám phá ra những điều kỳ diệu về vũ trụ, mở rộng tầm nhìn và khát vọng khám phá của con người. Tự do bay lên không gian mơ ước không chỉ là một ước mơ, mà còn là sức mạnh động viên, giúp con người vượt qua mọi rào cản và tiến xa hơn trong cuộc sống."/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tintuc_3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:text="Cuộc Phiêu Lưu Và Ý Nghĩa Sống Động
+
+Cuối cùng, Doraemon Nobita và Bản Giao Hưởng Địa Cầu không chỉ là một bộ phim giải trí, mà còn là một cuộc phiêu lưu đầy ý nghĩa và sâu sắc. Thông qua những tình huống hài hước, những pha hành động đầy kịch tính và thông điệp nhân văn sâu sắc, bộ phim đã truyền đi thông điệp về tình bạn, sự hợp tác và ý thức môi trường một cách sống động và cuốn hút.
+
+Với sự kết hợp hoàn hảo giữa kịch bản độc đáo, hình ảnh sống động và thông điệp ý nghĩa, Doraemon Nobita và Bản Giao Hưởng Địa Cầu hứa hẹn sẽ mang lại những trải nghiệm đỉnh cao và không thể quên cho khán giả mọi lứa tuổi. Hãy cùng chờ đợi và tham gia vào cuộc phiêu lưu kỳ diệu này!"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

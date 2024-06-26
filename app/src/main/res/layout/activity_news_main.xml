@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage_lephamhungha_mobile.News_main">
+
+    <!-- Thanh công cụ -->
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:padding="40dp"
+        android:text="TIN TỨC &amp; ƯU ĐÃI"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Tabs -->
+    <LinearLayout
+        android:id="@+id/i_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/tabs"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tab_news_main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TIN TỨC"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabs2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tab_offers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ƯU ĐÃI"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/news_morong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i_tabs"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_tintuc"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tintuc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="[Doraemon, Nobita và Bản Giao Hưởng Địa Cầu ]"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Đón chào một cuộc phiêu lưu kỳ diệu hơn bao giờ hết! Trailer đầu tiên của siêu phẩm 2024 Doraemon, Nobita và Bản Giao Hưởng Tuyệt Vời Của Trái Đất đã chính thức ra mắt, hứa hẹn mang đến những trải nghiệm đỉnh cao và bất ngờ không thể lường trước! Cùng Doraemon và nhóm bạn thân của mình, chúng ta sẽ bước vào một cuộc hành trình đầy mê hoặc, nơi những khám phá mới và những kỷ niệm đáng nhớ chờ đợi. Sẵn sàng cho một cuộc phiêu lưu vượt thời gian và không gian, nơi mọi giới hạn đều có thể được vượt qua!"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <!-- Thanh điều hướng dưới -->
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#E0E0E0"
+        android:padding="15dp"
+        android:clipToPadding="false"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/icon_home"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconhomes_bottom" />
+
+        <ImageView
+            android:id="@+id/icon_film"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconfilm_bottom" />
+
+        <ImageView
+            android:id="@+id/icon_picture"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconpictures_bottom" />
+
+        <ImageView
+            android:id="@+id/icon_person"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconpersons_bottom" />
+    </LinearLayout>
+
+</RelativeLayout>
