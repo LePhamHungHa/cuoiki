@@ -27,7 +27,7 @@ public class SeatActivity extends AppCompatActivity {
 
     private GridLayout seatLayout;
 
-    private ImageView tocombo;
+    private ImageView tocombo, backpagetohome;
     private HashSet<String> soldSeats = new HashSet<>(Arrays.asList("D02", "D03", "D04"));
 
     @SuppressLint("MissingInflatedId")
@@ -40,9 +40,18 @@ public class SeatActivity extends AppCompatActivity {
         tvSelectedSeats = findViewById(R.id.tvSelectedSeats);
         tvTotalPrice = findViewById(R.id.tvTotalPrice);
         tocombo = findViewById(R.id.tocombo);
+        backpagetohome = findViewById(R.id.backpagetohome);
 
         // Thêm ghế động
         addSeats();
+
+        backpagetohome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SeatActivity.this, ScreeningActivity.class);
+                startActivity(intent);
+            }
+        });
 
         tocombo.setOnClickListener(new View.OnClickListener() {
             @Override

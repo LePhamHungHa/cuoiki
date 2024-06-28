@@ -367,11 +367,12 @@
 
         <ImageButton
             android:id="@+id/imageButton3"
-            android:layout_width="73dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center" android:layout_weight="1" android:src="@drawable/ic_right"
-            android:background="@drawable/roundconor_imgbtn"
-            />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_right"
+            android:background="@drawable/roundconor_imgbtn" />
 
     </LinearLayout>
 

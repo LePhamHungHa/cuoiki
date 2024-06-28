@@ -56,6 +56,8 @@
         <activity
             android:name=".LoginPage.LoginActivity"
             android:exported="false" />
+        <activity android:name=".SettingPage"
+            android:exported="false"/>
         <activity
             android:name=".SignupPage.SignUpActivity"
             android:exported="false" /> <!-- <activity -->

@@ -17,14 +17,16 @@ import androidx.fragment.app.Fragment;
 
 import com.example.bookingticket.LoginPage.LoginActivity;
 import com.example.bookingticket.R;
+import com.example.bookingticket.SettingPage;
 import com.example.bookingticket.SignupPage.SignUpActivity;
+import com.example.bookingticket.Theater.TheaterActivity;
 import com.example.bookingticket.homepage_lephamhungha_mobile.Cinema;
 import com.example.bookingticket.homepage_lephamhungha_mobile.MainHome;
 import com.example.bookingticket.homepage_lephamhungha_mobile.News_main;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainPersonPageFragment extends AppCompatActivity {
-    private ImageView iconHome, iconFilm, iconPicture, iconPerson;
+    private ImageView iconHome, iconFilm, iconPicture, iconPerson, settings;
     private Handler handler;
     private Runnable slideRunnable;
     private Runnable uuDaiRunnable;
@@ -42,6 +44,7 @@ public class MainPersonPageFragment extends AppCompatActivity {
         iconPerson = findViewById(R.id.icon_person);
         btn_register = findViewById(R.id.btn_register);
         btn_login = findViewById(R.id.btn_login);
+        settings = findViewById(R.id.settings);
 
 
         // Su kien login
@@ -58,6 +61,14 @@ public class MainPersonPageFragment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainPersonPageFragment.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainPersonPageFragment.this, SettingPage.class);
                 startActivity(intent);
             }
         });

@@ -85,7 +85,7 @@
                 android:id="@+id/list_film"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@color/Snow"
+                android:background="@color/purple"
                 android:layout_below="@id/choosefilm">
 
                 <LinearLayout
@@ -97,16 +97,17 @@
                     <ImageView
                         android:id="@+id/icon_choosefilm"
                         android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/iconfilm_bottom"/>
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_list"/>
 
                     <TextView
                         android:id="@+id/choose_listfilm"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textColor="@color/fuchsia"
-                        android:text="Chọn phim để chill"
+                        android:textColor="@color/white"
+                        android:text="View the movie list and book tickets"
                         android:gravity="center"
+                        android:textSize="20sp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"/>
 
@@ -184,7 +185,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#E0E0E0"
+        android:background="@color/Snow"
         android:padding="15dp"
         android:gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"

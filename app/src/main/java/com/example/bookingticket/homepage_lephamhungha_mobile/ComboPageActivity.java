@@ -1,5 +1,6 @@
 package com.example.bookingticket.homepage_lephamhungha_mobile;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,12 +30,13 @@ public class ComboPageActivity extends AppCompatActivity {
     public int value_cb1, value_cb2, value_cb3 = 0;
     private int gia_cb1, gia_cb2, gia_cb3;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_combo_page);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.paypage), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.combopage), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -184,12 +186,13 @@ public class ComboPageActivity extends AppCompatActivity {
         });
 
 //        Sang trang tiếp theo
-        nextPage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                return;
-            }
-        });
+       nextPage.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(ComboPageActivity.this, PayPageMainActivity.class);
+               startActivity(intent);
+           }
+       });
     }
 
     public void updateTotal(){
