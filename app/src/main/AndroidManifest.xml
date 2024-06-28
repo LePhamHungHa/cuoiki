@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,7 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookingTicket"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".homepage_lephamhungha_mobile.PayPageMainActivity"
+            android:exported="false" />
         <activity
             android:name=".Admin.AdminActivity"
             android:exported="false"
@@ -46,8 +49,7 @@
             android:exported="false" />
         <activity
             android:name=".PersonPage.MainPersonPageFragment"
-            android:exported="false" />
-        <!-- <activity -->
+            android:exported="false" /> <!-- <activity -->
         <!-- android:name=".test.testView" -->
         <!-- android:exported="false" -->
         <!-- android:theme="@style/Theme.BookingTicket" /> -->
@@ -66,24 +68,24 @@
         <!-- <activity -->
         <!-- android:name="com.example.Seat_Page.SeatActivity" -->
         <!-- android:exported="false" /> -->
-<!--        <activity-->
-<!--            android:name=".Screening_Detail_Page.ScreeningActivity"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".PayPage_SettingPage.SettingPage"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".PayPage_SettingPage.PayPage"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".PayPage"-->
-<!--            android:exported="false" />-->
+        <!-- <activity -->
+        <!-- android:name=".Screening_Detail_Page.ScreeningActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".PayPage_SettingPage.SettingPage" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".PayPage_SettingPage.PayPage" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".PayPage" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".ProfilePhim.ProfilePhim"
             android:exported="false" />
         <activity
             android:name=".homepage_lephamhungha_mobile.MainHome"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

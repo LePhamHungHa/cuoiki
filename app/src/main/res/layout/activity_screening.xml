@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="5sp"
     android:orientation="vertical"
-    tools:context=".ScreeningActivity">
+    tools:context=".homepage_lephamhungha_mobile.ScreeningActivity">
 
     <RelativeLayout
         android:id="@+id/action_bar"
