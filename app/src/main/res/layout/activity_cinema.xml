@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".homepage_lephamhungha_mobile.Cinema">
+
+    <TextView
+        android:id="@+id/text_buyticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:padding="40dp"
+        android:text="MUA VÉ"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/cinema_main"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/text_buyticket"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/cinemaImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_cinema" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="16dp">
+
+            <TextView
+                android:id="@+id/cinemaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cinestar Huế"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cinemaAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 Hai Bà Trưng, Vĩnh Ninh, Thành phố Huế, Thừa Thiên Huế"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cinemaPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0234 7300 081"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#E0E0E0"
+        android:padding="15dp"
+        android:clipToPadding="false"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/icon_home"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconhomes_bottom" />
+
+        <ImageView
+            android:id="@+id/icon_film"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconfilm_bottom" />
+
+        <ImageView
+            android:id="@+id/icon_picture"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconpictures_bottom" />
+
+        <ImageView
+            android:id="@+id/icon_person"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/iconpersons_bottom" />
+    </LinearLayout>
+
+</RelativeLayout>
